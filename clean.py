@@ -1,57 +1,96 @@
-import pandas as pd                                                     # import libs
+import pandas as pd  # import libs
 
 #### #### #### #### #### ####   start marriage cleaning   #### #### #### #### #### #### ####
-marriage = pd.read_excel('data no meta/state-marriage-rates-90-95-99-17_no_meta.xlsx',  # read in the data to pandas dataframe, ready file
+marriage = pd.read_excel('data no meta/state-marriage-rates-90-95-99-17_no_meta.xlsx',
+                         # read in the data to pandas dataframe, ready file
                          header=[0, 1],  # set header
                          na_values='---',  # null values in excel file
                          index_col=[0])  # set index column
-marriage = marriage.stack([0,1]).reset_index()                          # reshape data by stacking to long, then reset index to new index
+marriage = marriage.stack([0, 1]).reset_index()  # reshape data by stacking to long, then reset index to new index
 
-marriage.rename(columns={marriage.columns[0]: 'State',                  # rename columns, first column past index renamed to State
-                         marriage.columns[1]: 'left',                   # second column renamed to left, for leftovers, column is dropped
-                         marriage.columns[2]: 'Year',                   # third column renamed to Year
-                         marriage.columns[3]: 'Marriage Rate'}          # fourth column set to Marriage Rate
-                , inplace=True)                                         # true so that we don't have to set school = (copy we are returning)
+marriage.rename(columns={marriage.columns[0]: 'State',  # rename columns, first column past index renamed to State
+                         marriage.columns[1]: 'left',  # second column renamed to left, for leftovers, column is dropped
+                         marriage.columns[2]: 'Year',  # third column renamed to Year
+                         marriage.columns[3]: 'Marriage Rate'}  # fourth column set to Marriage Rate
+                , inplace=True)  # true so that we don't have to set school = (copy we are returning)
 
-marriage.drop(columns=['left'] ,inplace=True)                           # column is dropped, not needed
+marriage.drop(columns=['left'], inplace=True)  # column is dropped, not needed
 
-marriage.to_excel(excel_writer='cleaned data/marriage_cleaned_in_python.xls',   # read dataframe to excel, set file name
-                sheet_name='marriage rates',                            # sheet named 'marriage rates'
-                na_rep='null',                                          # treat n/a as null
-                index=False)                                            # don't include pandas index
-
+marriage.to_excel(excel_writer='cleaned data/marriage_cleaned_in_python.xls',  # read dataframe to excel, set file name
+                  sheet_name='marriage rates',  # sheet named 'marriage rates'
+                  na_rep='null',  # treat n/a as null
+                  index=False)  # don't include pandas index
 
 #### #### #### #### #### #### start divorce cleaning #### #### #### #### #### ####
-divorce = pd.read_excel('data no meta\state-divorce-rates-90-95-99-17_no_meta.xlsx',  # read in the data to pandas dataframe, ready file
-                         header=[0, 1],  # set header
-                         na_values='---',  # null values in excel file
-                         index_col=[0])  # set index column
-divorce = divorce.stack([0,1]).reset_index()                          # reshape data by stacking to long, then reset index to new index
+divorce = pd.read_excel('data no meta\state-divorce-rates-90-95-99-17_no_meta.xlsx',
+                        # read in the data to pandas dataframe, ready file
+                        header=[0, 1],  # set header
+                        na_values='---',  # null values in excel file
+                        index_col=[0])  # set index column
+divorce = divorce.stack([0, 1]).reset_index()  # reshape data by stacking to long, then reset index to new index
 
-divorce.rename(columns={divorce.columns[0]: 'State',                  # rename columns, first column past index renamed to State
-                         divorce.columns[1]: 'left',                   # second column renamed to left, for leftovers, column is dropped
-                         divorce.columns[2]: 'Year',                   # third column renamed to Year
-                         divorce.columns[3]: 'Divorce Rate'}          # fourth column set to Divorce Rate
+divorce.rename(columns={divorce.columns[0]: 'State',  # rename columns, first column past index renamed to State
+                        divorce.columns[1]: 'left',  # second column renamed to left, for leftovers, column is dropped
+                        divorce.columns[2]: 'Year',  # third column renamed to Year
+                        divorce.columns[3]: 'Divorce Rate'}  # fourth column set to Divorce Rate
+               , inplace=True)  # true so that we don't have to set school = (copy we are returning)
+
+divorce.drop(columns=['left'], inplace=True)  # column is dropped, not needed
+
+divorce.to_excel(excel_writer='cleaned data/divorce_cleaned_in_python.xls',  # read dataframe to excel, set file name
+                 sheet_name='divorce rates',  # sheet named 'divorce rates'
+                 na_rep='null',  # treat n/a as null
+                 index=False)  # don't include pandas index
+
+#### #### #### #### #### #### start unemployment cleaning #### #### #### #### #### ####
+unemployment = pd.read_excel('data no meta\Unemployment rate by state 2000-2017_no_meta.xls',
+                             # read in the data to pandas dataframe, ready file
+                             header=[0],  # set header
+                             na_values='N/A',  # null values in excel file
+                             index_col=[1])  # set index column
+
+unemployment.drop(columns=['Fips'], inplace=True)
+unemployment.drop(columns=['MOE'], inplace=True)
+unemployment = unemployment.reset_index()
+
+unemployment.to_excel(excel_writer='cleaned data/unemployment_cleaned_in_python.xls',
+                      # read dataframe to excel, set file name
+                      sheet_name='unemployment rates',  # sheet named 'divorce rates'
+                      na_rep='null',
+                      index=False)  # treat n/a as null
+
+
+#### #### #### #### #### ####   start migration cleaning   #### #### #### #### #### #### ####
+migration = pd.read_excel('data no meta/tab-a-1_no_meta.xls',  # read in the data to pandas dataframe, ready file
+                         header=[0, 1],  # set header
+                         na_values='---')  # null values in excel file
+migration = migration.stack([0,1]).reset_index()                          # reshape data by stacking to long, then reset index to new index
+
+migration.rename(columns={migration.columns[0]: 'State',                  # rename columns, first column past index renamed to State
+                         migration.columns[1]: 'left',                   # second column renamed to left, for leftovers, column is dropped
+                         migration.columns[2]: 'Year',                   # third column renamed to Year
+                         migration.columns[3]: 'Marriage Rate'}          # fourth column set to Marriage Rate
                 , inplace=True)                                         # true so that we don't have to set school = (copy we are returning)
 
-divorce.drop(columns=['left'] ,inplace=True)                           # column is dropped, not needed
+migration.drop(columns=['left'] ,inplace=True)                           # column is dropped, not needed
 
-divorce.to_excel(excel_writer='cleaned data/divorce_cleaned_in_python.xls',   # read dataframe to excel, set file name
-                sheet_name='divorce rates',                            # sheet named 'divorce rates'
+migration.to_excel(excel_writer='cleaned data/migration_cleaned_in_python.xls',   # read dataframe to excel, set file name
+                sheet_name='migration rates',                            # sheet named 'marriage rates'
                 na_rep='null',                                          # treat n/a as null
                 index=False)                                            # don't include pandas index
 
-#### #### #### #### #### #### start unemployment cleaning #### #### #### #### #### ####
-unemployment = pd.read_excel('data no meta\Unemployment rate by state 2000-2017_no_meta.xls',  # read in the data to pandas dataframe, ready file
-                         header=[0],  # set header
-                         na_values='N/A',  # null values in excel file
-                         index_col=[1])  # set index column
+#### #### #### #### #### #### start party affiliation cleaning #### #### #### #### #### ####
+partyAffiliation = pd.read_excel('data no meta/Party_ID_1939-2014_no_meta.xlsx',
+                             # read in the data to pandas dataframe, ready file
+                             header=[0],  # set header
+                             na_values=' ',  # null values in excel file
+                             index_col=[0])  # set index column
 
-unemployment.drop(columns=['Fips'] ,inplace=True)
-unemployment.drop(columns=['MOE'] ,inplace=True)
-unemployment = unemployment.reset_index()
+partyAffiliation = partyAffiliation.reset_index()
 
-unemployment.to_excel(excel_writer='cleaned data/unemployment_cleaned_in_python.xls',   # read dataframe to excel, set file name
-                sheet_name='unemployment rates',                            # sheet named 'divorce rates'
-                na_rep='null',
-                index=False)                                          # treat n/a as null
+partyAffiliation.to_excel(excel_writer='cleaned data/party_ID_cleaned_in_python.xls',
+                      # read dataframe to excel, set file name
+                      sheet_name='US party affiliation',  # sheet named 'US party affiliation'
+                      na_rep='null',
+                      index=False)  # treat n/a as null
+
