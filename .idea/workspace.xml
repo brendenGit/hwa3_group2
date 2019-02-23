@@ -4,11 +4,8 @@
     <list default="true" id="b189539f-71d8-4896-99c1-8a9bf8fa3ad7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clean.py" beforeDir="false" afterPath="$PROJECT_DIR$/clean.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cleaned data/migration_cleaned_in_python.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cleaned data/party_ID_cleaned_in_python.xls" beforeDir="false" afterPath="$PROJECT_DIR$/cleaned data/party_ID_cleaned_in_python.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data no meta/Health Insurance Coverage Type by Family Income and Age 2008-2017_no_meta.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data no meta/h08_no_meta.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data no meta/h08_no_meta.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data no meta/tab-a-1_no_meta.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleaned data/Migration_cleaned_in_python.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cleaned data/Migration_cleaned_in_python.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleaned data/total_income_cleaned_in_python.xls" beforeDir="false" afterPath="$PROJECT_DIR$/cleaned data/total_income_cleaned_in_python.xls" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,12 +14,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/clean.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2771">
-              <caret line="163" column="49" selection-start-line="163" selection-start-column="49" selection-end-line="163" selection-end-column="49" />
+            <state relative-caret-position="3060">
+              <caret line="213" column="111" selection-start-line="213" selection-start-column="111" selection-end-line="213" selection-end-column="111" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -68,7 +65,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -80,6 +76,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -164,7 +161,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1369936" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1401919" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -236,8 +233,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/clean.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2771">
-          <caret line="163" column="49" selection-start-line="163" selection-start-column="49" selection-end-line="163" selection-end-column="49" />
+        <state relative-caret-position="3060">
+          <caret line="213" column="111" selection-start-line="213" selection-start-column="111" selection-end-line="213" selection-end-column="111" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
