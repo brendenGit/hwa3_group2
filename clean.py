@@ -8,7 +8,7 @@ import os
 ### files that need to be cleaned. each chunk of code is indicated with 12 sets of ####
 
 
-#### #### #### #### #### ####   start marriage cleaning   #### #### #### #### #### #### ####1
+#### #### #### #### #### ####   start marriage cleaning   #### #### #### #### #### ####
 
 marriage = pd.read_excel('data no meta/state-marriage-rates-90-95-99-17_no_meta.xlsx',  # read in the data to pandas dataframe, ready file
                          header=[0, 1],                                                 # set header
@@ -32,7 +32,7 @@ marriage.to_excel(excel_writer='cleaned data/marriage_cleaned_in_python.xls',   
 
 
 
-#### #### #### #### #### #### start divorce cleaning #### #### #### #### #### ####2
+#### #### #### #### #### ####   start divorce cleaning   #### #### #### #### #### ####
 
 divorce = pd.read_excel('data no meta\state-divorce-rates-90-95-99-17_no_meta.xlsx',    # read in the data to pandas dataframe, ready file
                         header=[0, 1],                                                  # set header
@@ -56,7 +56,7 @@ divorce.to_excel(excel_writer='cleaned data/divorce_cleaned_in_python.xls',     
 
 
 
-#### #### #### #### #### #### start unemployment cleaning #### #### #### #### #### ####3
+#### #### #### #### #### ####   start unemployment cleaning   #### #### #### #### #### ####
 
 unemployment = pd.read_excel('data no meta\Unemployment rate by state 2000-2017_no_meta.xls',
                              header=[0],                                                # set header
@@ -73,7 +73,7 @@ unemployment.to_excel(excel_writer='cleaned data/unemployment_cleaned_in_python.
                       index=False)                                                      # treat n/a as null
 
 
-#### #### #### #### #### #### start party affiliation cleaning #### #### #### #### #### ####4
+#### #### #### #### #### ####   start party affiliation cleaning   #### #### #### #### #### ####
 
 partyAffiliation = pd.read_excel('data no meta/Party_ID_1939-2014_no_meta.xlsx',        # read in the data to pandas dataframe, ready file
                              header=[0],                                                # set header
@@ -90,7 +90,7 @@ partyAffiliation.to_excel(excel_writer='cleaned data/party_ID_cleaned_in_python.
 
 
 
-#### #### #### #### #### ####   start income cleaning   #### #### #### #### #### #### ####5
+#### #### #### #### #### ####   start income cleaning   #### #### #### #### #### ####
 
 incomeCur = pd.read_excel("data no meta\h08_no_meta.xlsx",                              # read in the data to pandas dataframe, ready file
                        skiprows=1,                                                      # skipping meta data
@@ -132,7 +132,7 @@ totalIncomes.to_excel(excel_writer='cleaned data/total_income_cleaned_in_python.
 
 
 
-#### #### #### #### #### ####   start birthrate cleaning   #### #### #### #### #### #### ####6
+#### #### #### #### #### ####   start birthrate cleaning   #### #### #### #### #### ####
 
 df = pd.read_csv("data no meta\NCHS_-_Births_and_General_Fertility_Rates__United_States_no_meta.csv",
                          header=[0],                                                    # set header
@@ -145,7 +145,7 @@ df.to_excel(excel_writer='cleaned data/birthrate_cleaned_in_python.xls',        
 
 
 
-########################cleaning Migration/Mobility#########################7
+#### #### #### #### #### #### ####   cleaning Migration/Mobility #### #### #### #### #### #### ####
 
 df = pd.read_excel("data no meta\migration.xlsx",                                       # Read in file
                    header=[0, 1])                                                       # Moves the headers to the top left corner
@@ -165,7 +165,7 @@ df.to_excel(excel_writer='cleaned data/Migration_cleaned_in_python.xlsx',       
 
 
 
-#############################Cleaning Health Insurance##########################
+#### #### #### #### #### #### ####   Cleaning Health Insurance   #### #### #### #### #### #### ####
 
 df = pd.read_excel('data no meta\Health Insurance Coverage Type by Family Income and Age 2008-2017_no_meta.xlsx',
                    usecols=9,                                                           # Use all 9 columns for dataframe
@@ -188,7 +188,7 @@ df.to_excel(excel_writer='cleaned data/Health_Insurance_cleaned_by_python.xlsx',
 
 
 
-#################################Clean State Crimes###############################
+#### #### #### #### #### #### ####   Clean State Crimes   #### #### #### #### #### #### ####
                                                                                         # we cleaned our crime by state data by downloading individual state
                                                                                         # data files, placing them in a folder, looping through that folder,
                                                                                         # and running each data set through the code below. We then concatonate

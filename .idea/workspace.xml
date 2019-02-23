@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/clean.py" line="75" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b189539f-71d8-4896-99c1-8a9bf8fa3ad7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clean.py" beforeDir="false" afterPath="$PROJECT_DIR$/clean.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cleaned data/Migration_cleaned_in_python.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cleaned data/Migration_cleaned_in_python.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cleaned data/total_income_cleaned_in_python.xls" beforeDir="false" afterPath="$PROJECT_DIR$/cleaned data/total_income_cleaned_in_python.xls" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/clean.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3060">
-              <caret line="213" column="111" selection-start-line="213" selection-start-column="111" selection-end-line="213" selection-end-column="111" />
+            <state relative-caret-position="698">
+              <caret line="190" column="92" selection-start-line="190" selection-start-column="92" selection-end-line="190" selection-end-column="92" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -160,8 +160,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1401919" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14179105" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -233,8 +234,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/clean.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3060">
-          <caret line="213" column="111" selection-start-line="213" selection-start-column="111" selection-end-line="213" selection-end-column="111" />
+        <state relative-caret-position="698">
+          <caret line="190" column="92" selection-start-line="190" selection-start-column="92" selection-end-line="190" selection-end-column="92" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
