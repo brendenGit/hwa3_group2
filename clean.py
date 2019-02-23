@@ -148,7 +148,6 @@ df = pd.read_excel("data no meta\migration.xlsx",  # Read in file
                    header=[0, 1])  # Moves the headers to the top left corner
 
 df = df.dropna(how='all')
-# df = df.dropna(how = 'any')
 df.columns = df.columns.get_level_values(0)
 df = df.dropna(how='any')
 df = df.reset_index()
@@ -156,9 +155,54 @@ df = df.reset_index()
 df.drop(columns=['index'], axis=1, inplace=True)
 
 
-
 # Write to .xls file
 df.to_excel(excel_writer='cleaned data/Migration_cleaned_in_python.xlsx',  # name output
             sheet_name='test1',  # name sheet
             na_rep='null',  # how to represent null values
             index=False)  # Do not keep the index
+
+
+#############################Cleaning Health Insurance##########################
+df = pd.read_excel('data no meta\Health Insurance Coverage Type by Family Income and Age 2008-2017_no_meta.xlsx',#Read in file
+                   usecols=9,#Use all 9 columns for dataframe
+                   na_values = 'N/A')#Null values are labeded N/A
+
+df['Number'] = df['Data']#Make new column from moving number of people value
+
+df.Number = df.Number.shift(-1)#Shift Number column up by one position
+
+df = df.iloc[::2]#Remove every other row
+#Drop Data Type column, redundant with new column
+df = df.drop(['Data Type'], axis = 1)
+df.rename(index= str, columns = {'Data':'Percent'}, inplace=True)#Rename column
+
+#Write to .xls file
+df.to_excel(excel_writer='cleaned data/Health_Insurance_cleaned_by_python.xlsx', #name output
+                sheet_name='HealthInsuranceRates',#name sheet
+                na_rep='null', #how to represent null values
+                index=False) # Do not keep the index
+
+
+
+#################################Clean State Crimes###############################
+# get data file names
+path =r'CrimesByState'
+filenames = glob.glob(path + "/*.csv")
+
+dfs = []
+for filename in filenames:
+    df = pd.read_csv(filename,error_bad_lines=False,
+                       skiprows=9, #Skips metadata in rows 1-0
+                       skipfooter=18) # Skips metadata on the bottom
+    df = df.drop(columns = ['Revised rape rate /2','Unnamed: 12'], axis = 1) #Drop Rows
+    df['State'] = os.path.basename(filename)#Make state column
+    df['State'] = df['State'].map(lambda x: x.rstrip('.csv'))#remove csv
+    dfs.append(df)
+    
+# Concatenate all data into one DataFrame
+big_frame = pd.concat(dfs, ignore_index=True)
+
+big_frame.to_excel(excel_writer='cleaned data/State_Crime_cleaned_by_python.xlsx', #name output
+                sheet_name='test1',#name sheet
+                na_rep='null', #how to represent null values
+                index= False) # Do not keep the index
