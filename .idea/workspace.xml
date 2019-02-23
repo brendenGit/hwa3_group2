@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b189539f-71d8-4896-99c1-8a9bf8fa3ad7" name="Default Changelist" comment="" />
+    <list default="true" id="b189539f-71d8-4896-99c1-8a9bf8fa3ad7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean.py" beforeDir="false" afterPath="$PROJECT_DIR$/clean.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleaned data/migration_cleaned_in_python.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleaned data/party_ID_cleaned_in_python.xls" beforeDir="false" afterPath="$PROJECT_DIR$/cleaned data/party_ID_cleaned_in_python.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data no meta/Health Insurance Coverage Type by Family Income and Age 2008-2017_no_meta.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data no meta/h08_no_meta.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data no meta/h08_no_meta.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data no meta/tab-a-1_no_meta.xls" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,12 +17,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/clean.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="92" column="94" lean-forward="true" selection-start-line="92" selection-start-column="94" selection-end-line="92" selection-end-column="94" />
+            <state relative-caret-position="2771">
+              <caret line="163" column="49" selection-start-line="163" selection-start-column="49" selection-end-line="163" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -31,6 +42,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>marriage</find>
+      <find>columns=</find>
+      <find>columns</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -43,9 +56,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="240" />
-    <option name="y" value="52" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="128" />
+    <option name="y" value="22" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -70,6 +83,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/income (1).py" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
@@ -84,7 +98,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.clean">
+    <configuration name="HWC" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="hwa3_group2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop/HW3" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Desktop/HW3/HWC.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="clean" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="hwa3_group2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -109,6 +144,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.clean" />
+        <item itemvalue="Python.HWC" />
       </list>
     </recent_temporary>
   </component>
@@ -127,14 +163,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1359275" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1369936" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.30653805" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.30653805" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978564" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -142,7 +177,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3290461" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.30546623" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3290461" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -150,21 +185,62 @@
       <window_info anchor="right" id="R Packages" order="4" />
     </layout>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/clean.py</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/Desktop/HW3/HW3.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/HW3/HW3_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/HW3/HW3A.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="41" selection-start-column="41" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/HW3/HWC.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <element signature="e#86#105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/income.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="36" selection-start-line="36" selection-end-line="36" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/HW3/HW3B.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/income (1).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="48" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/clean.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="92" column="94" lean-forward="true" selection-start-line="92" selection-start-column="94" selection-end-line="92" selection-end-column="94" />
+        <state relative-caret-position="2771">
+          <caret line="163" column="49" selection-start-line="163" selection-start-column="49" selection-end-line="163" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
