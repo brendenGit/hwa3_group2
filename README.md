@@ -1,7 +1,7 @@
-# hwa3_group2
-### Where To Find Things
+### hwa3_group2
+# Where To Find Things
 ## Data
-# all raw data is found in data folder
+### all raw data is found in data folder
 # all data removed of meta data and design elements are found in data no meta folder
 # all data cleaned in python are found in cleaned data
 # CrimeByState folder is individual data sets of every state for crime rates, used for looping method
