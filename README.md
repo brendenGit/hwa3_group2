@@ -1,22 +1,22 @@
 ### hwa3_group2
 # Where To Find Things
 ## Data
-### all raw data is found in data folder
-### all data removed of meta data and design elements are found in data no meta folder
-### all data cleaned in python are found in cleaned data
-### CrimeByState folder is individual data sets of every state for crime rates, used for looping method
+#### all raw data is found in data folder
+#### all data removed of meta data and design elements are found in data no meta folder
+#### all data cleaned in python are found in cleaned data
+#### CrimeByState folder is individual data sets of every state for crime rates, used for looping method
 
 
 
 # Documents
 ## Group2TableauPublicWriteUp.docx
-### contains our write up, snapshots of dashboard, and link to tableau public
+#### contains our write up, snapshots of dashboard, and link to tableau public
 
 
 
 # Code
 ## clean.py
-### contains all code for cleaning and reshaping given data (plus two extra data files)
+#### contains all code for cleaning and reshaping given data (plus two extra data files)
 
 
 
